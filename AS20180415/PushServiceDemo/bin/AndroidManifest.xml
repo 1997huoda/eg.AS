@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alarmtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.alarmtest.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+ 		 <activity
+            android:name="com.example.alarmtest.MessageActivity"
+         >
+        </activity>
+         <!-- 为此应用私有的独立进程 -->  
+		<service android:process=":AlarmSysService" android:name="com.example.alarmtest.AlarmSysService"></service>  
+        <!-- 为此应用私有的独立进程 -->  
+		<service android:process=":MyPushService" android:name="com.example.alarmtest.MyPushService"></service>
+       <!-- 为此应用私有的独立进程 -->  
+		<service  android:process=":PushService" android:name="com.example.alarmtest.PushService"></service>
+        <!-- 监听系统启动广播 -->
+		<receiver android:name="com.example.alarmtest.AlarmReceiver">
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+		        <category android:name="android.intent.category.LAUNCHER"></category>
+		    </intent-filter>
+		</receiver>		      
+    </application>
+
+</manifest>

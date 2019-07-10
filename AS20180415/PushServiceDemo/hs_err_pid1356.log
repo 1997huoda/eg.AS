@@ -1,0 +1,87 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2924), pid=1356, tid=6868
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) Client VM (10.0-b22 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00338000):  JavaThread "Unknown thread" [_thread_in_vm, id=6868, stack(0x002b0000,0x00300000)]
+
+Stack: [0x002b0000,0x00300000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00338000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6868, stack(0x002b0000,0x00300000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	D:\Program Files\Java\jdk1.6.0_06\bin\javaw.exe
+0x77270000 - 0x773f0000 	C:\Windows\SysWOW64\ntdll.dll
+0x75f60000 - 0x76070000 	C:\Windows\syswow64\kernel32.dll
+0x74a80000 - 0x74ac7000 	C:\Windows\syswow64\KERNELBASE.dll
+0x76580000 - 0x76620000 	C:\Windows\syswow64\ADVAPI32.dll
+0x762c0000 - 0x7636c000 	C:\Windows\syswow64\msvcrt.dll
+0x75df0000 - 0x75e09000 	C:\Windows\SysWOW64\sechost.dll
+0x74b00000 - 0x74bf0000 	C:\Windows\syswow64\RPCRT4.dll
+0x74950000 - 0x749b0000 	C:\Windows\syswow64\SspiCli.dll
+0x74940000 - 0x7494c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x74c80000 - 0x74d80000 	C:\Windows\syswow64\USER32.dll
+0x76230000 - 0x762c0000 	C:\Windows\syswow64\GDI32.dll
+0x76190000 - 0x7619a000 	C:\Windows\syswow64\LPK.dll
+0x76370000 - 0x7640d000 	C:\Windows\syswow64\USP10.dll
+0x75d00000 - 0x75d60000 	C:\Windows\system32\IMM32.DLL
+0x749b0000 - 0x74a7c000 	C:\Windows\syswow64\MSCTF.dll
+0x73040000 - 0x73073000 	C:\Windows\SysWOW64\nvinit.dll
+0x7c340000 - 0x7c396000 	D:\Program Files\Java\jdk1.6.0_06\jre\bin\msvcr71.dll
+0x6d870000 - 0x6dac0000 	D:\Program Files\Java\jdk1.6.0_06\jre\bin\client\jvm.dll
+0x74790000 - 0x747c2000 	C:\Windows\system32\WINMM.dll
+0x728e0000 - 0x7292c000 	C:\Windows\system32\apphelp.dll
+0x6d320000 - 0x6d328000 	D:\Program Files\Java\jdk1.6.0_06\jre\bin\hpi.dll
+0x75e20000 - 0x75e25000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d820000 - 0x6d82c000 	D:\Program Files\Java\jdk1.6.0_06\jre\bin\verify.dll
+0x6d3c0000 - 0x6d3df000 	D:\Program Files\Java\jdk1.6.0_06\jre\bin\java.dll
+0x6d860000 - 0x6d86f000 	D:\Program Files\Java\jdk1.6.0_06\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\360Downloads\android-sdk\platforms\android-17\android.jar 
+java_command: com.example.alarmtest.Util
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Program Files\Java\jdk1.6.0_06
+CLASSPATH=.;D:\Program Files\Java\jdk1.6.0_06\lib;D:\Program Files\Java\jdk1.6.0_06\lib\dt.jar;D:\Program Files\Java\jdk1.6.0_06\lib\tools.jar
+PATH=D:/Program Files/Java/jdk1.6.0_06/bin/../jre/bin/client;D:/Program Files/Java/jdk1.6.0_06/bin/../jre/bin;D:/Program Files/Java/jdk1.6.0_06/bin/../jre/lib/i386;D:\programe files\php\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;D:\Program Files\Java\jdk1.6.0_06\bin;D:\Program Files\Java\jdk1.6.0_06\jre\bin;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;c:\php;c:\php\ext;D:\android\eclipse;
+USERNAME=zhaozhenhua
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7601 Service Pack 1
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 10 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 4194303k(3340272k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (10.0-b22) for windows-x86 JRE (1.6.0_06-b02), built on Mar 25 2008 01:22:05 by "java_re" with MS VC++ 7.1
+
+time: Sat May 04 14:09:17 2013
+elapsed time: 0 seconds
+
